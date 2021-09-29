@@ -1,0 +1,442 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #862e9c #7048e8
+GRAY COLOR: #343a40 #868e96
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+.home,
+section {
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div .logo {
+  width: 150px;
+  display: flex;
+  align-content: flex-start;
+  margin-top: -30px;
+  margin-left: -60px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 100px;
+  color: #000;
+  background-color: #fff;
+  margin-top: 48px;
+}
+
+.btn--small {
+  color: #fff;
+  margin-left: 16px;
+  margin-top: 48px;
+}
+
+.btn--empty {
+  font-style: 10px;
+  padding: 8px 24px;
+  border: 2px solid #cc5de8;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+h2 {
+  color: #862e9c;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  display: inline-block;
+  justify-content: center;
+
+  position: relative;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 24px auto;
+  color: #862e9c;
+}
+
+h4 {
+  font-size: 16px;
+  color: #862e9c;
+}
+
+.underline {
+  width: 110px;
+  height: 1.5px;
+  background-color: #a8adb5;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.center-line {
+  width: 40px;
+  height: 2px;
+
+  border-top: 4px solid #cc5de8;
+  margin-left: 35px;
+  margin-top: -1px;
+}
+
+p {
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+.fav-icon {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: -10px;
+  margin-right: 6px;
+}
+
+.two-cl {
+  display: flex;
+  gap: 80px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.generic-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #cc5de8;
+}
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* ---------------HEADER-------------- */
+
+h1 {
+  margin-top: 25vh;
+  font-size: 62px;
+  /* line-height: 1.1; */
+  letter-spacing: -1px;
+}
+
+.home {
+  background-color: #862e9c;
+  height: 100vh;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  /* background-color: green; */
+}
+
+ul {
+  gap: 48px;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+li .btn--empty {
+  /* padding: 6px 16px; */
+  border: 1.7px solid #fff;
+  border-radius: 100px;
+}
+
+.hero-img {
+  width: 530px;
+  height: 530px;
+}
+
+.header-slogan {
+  color: #dee2e6;
+}
+
+.nav-icon,
+.side-nav-container {
+  display: none;
+}
+
+/* ---------------ABOUT US----------- */
+
+.about {
+  margin-bottom: 40px;
+}
+
+.header-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 48px;
+  padding: 0 64px;
+}
+
+.about-text ul {
+  display: inline-block;
+  margin-bottom: 64px;
+}
+
+.about-text li {
+  margin-bottom: 16px;
+}
+
+.about-text li {
+  display: flex;
+  gap: 12px;
+}
+
+.cl-1-of-2 {
+  max-width: 500px;
+}
+
+/* Why choose us */
+.why-us {
+  background-color: #f8f0fc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.small-para {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* note */
+.cl-1 {
+  max-width: 46%;
+}
+
+.box {
+  background-color: #dee2e6;
+  padding: 16px 24px;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.box p {
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+span {
+  color: #862e9c;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+.box .two-cl {
+  justify-content: space-between;
+  padding-right: 12px;
+  gap: 20px;
+}
+
+.arrow-down {
+  color: #862e9c;
+  cursor: pointer;
+}
+
+.arrow-up {
+  color: #862e9c;
+  cursor: pointer;
+}
+
+.why-us-svg {
+  width: 500px;
+  height: 500px;
+}
+
+/* skills level */
+.skills-level {
+  padding-top: 80px;
+}
+.chart-svg {
+  width: 500px;
+  height: 500px;
+}
+/* 
+h5 {
+  display: flex;
+  justify-content: space-between;
+  color: #862e9c;
+  position: relative;
+
+  font-size: 12px;
+}
+
+h5 span {
+  font-size: 12px;
+}
+
+.level-bar {
+  margin-bottom: 48px;
+}
+
+.bar-line {
+  position: absolute;
+  height: 12px;
+  width: 550px;
+  background-color: #dee2e6;
+  margin-top: 6px;
+}
+
+.bar-fill {
+  border: 6px solid #cc5de8;
+}
+
+.bar-fill-1 {
+  width: 522.5px;
+}
+
+.bar-fill-2 {
+  width: 407px;
+}
+.bar-fill-3 {
+  width: 539px;
+}
+.bar-fill-4 {
+  width: 319px;
+} */
+
+h6 {
+  display: flex;
+  justify-content: space-between;
+  color: #862e9c;
+  /* position: relative; */
+
+  font-size: 12px;
+}
+
+h6 span {
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.level-bars {
+  margin-bottom: 24px;
+}
+
+.bar-lines {
+  /* position: absolute; */
+  height: 12px;
+  /* width: 88.5%; */
+  width: 100%;
+  background-color: #dee2e6;
+  margin-top: 6px;
+}
+
+.bar-fills {
+  border: 6px solid #cc5de8;
+}
+
+.bar-fills-1 {
+  width: 95%;
+}
+
+.bar-fills-2 {
+  width: 74%;
+}
+.bar-fills-3 {
+  width: 98%;
+}
+.bar-fills-4 {
+  width: 56%;
+}
+
+.gray-color {
+  color: #343a40;
+}
+
+/* ------------SERVICES-------------- */
+
+.services {
+  background-color: #f8f0fc;
+  padding-top: 80px;
+}
+
+.cl-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.grid-service {
+  font-size: 12px;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.container-extra {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.grid-service h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
